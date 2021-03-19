@@ -5,3 +5,5 @@ clicked = st.button("Click me")
 
 if clicked:
     st.write("Clicked!")
+
+st.code("foo = 'bar'")
