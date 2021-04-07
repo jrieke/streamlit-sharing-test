@@ -58,4 +58,4 @@ st.title("Test")
 
 
 # st.button("Click to trigger rerun")
-st.markdown('<a href="www.jrieke.com">sdkf</a>sdlkfs', unsafe_allow_html=True)
+st.markdown('<a href="https://www.jrieke.com">sdkf</a>sdlkfs', unsafe_allow_html=True)
