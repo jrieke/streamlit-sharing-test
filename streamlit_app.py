@@ -1,6 +1,7 @@
 import streamlit as st
-#from aitextgen import aitextgen
-#import gc
+
+# from aitextgen import aitextgen
+# import gc
 
 # from transformers import DistilBertTokenizer, DistilBertModel
 # import numpy as np
@@ -57,4 +58,4 @@ st.title("Test")
 
 
 # st.button("Click to trigger rerun")
-st.markdown('<a href="jrieke.com">sdkf</a>sdlkfs', unsafe_allow_html=True)
+st.markdown('<a href="www.jrieke.com">sdkf</a>sdlkfs', unsafe_allow_html=True)
