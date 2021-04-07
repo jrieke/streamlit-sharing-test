@@ -56,11 +56,13 @@ st.title("Test")
 #     return content
 # file_content = read_file()
 
+url = "https://github.com/jrieke"
 
-# st.button("Click to trigger rerun")
-st.markdown(
-    '<a href="https://github.com/jrieke">sdkf</a>sdlkfs', unsafe_allow_html=True
-)
-st.write("---")
-st.markdown('<iframe src="https://github.com/jrieke"></iframe>', unsafe_allow_html=True)
-streamlit.components.v1.iframe("https://github.com/jrieke")
+"A HTML link:"
+st.markdown(f'<a href="{url}">Click here</a>', unsafe_allow_html=True)
+
+"An iframe (via `st.markdown`):"
+st.markdown(f'<iframe src="{url}"></iframe>', unsafe_allow_html=True)
+
+"An iframe (via `st.components.v1.iframe`):"
+st.components.v1.iframe(url)
