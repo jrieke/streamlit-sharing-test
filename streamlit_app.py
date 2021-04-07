@@ -6,7 +6,7 @@ import streamlit as st
 # from transformers import DistilBertTokenizer, DistilBertModel
 # import numpy as np
 
-st.title("Test")
+st.title("Testing iframes on S4A")
 
 # ---- aitextgen ----
 # Result: Memory keeps increasing
@@ -56,6 +56,20 @@ st.title("Test")
 #     return content
 # file_content = read_file()
 
+"## For https://github.com/jrieke"
+url = "https://github.com/jrieke"
+
+"A HTML link:"
+st.markdown(f'<a href="{url}">Click here</a>', unsafe_allow_html=True)
+
+"An iframe (via `st.markdown`):"
+st.markdown(f'<iframe src="{url}"></iframe>', unsafe_allow_html=True)
+
+"An iframe (via `st.components.v1.iframe`):"
+st.components.v1.iframe(url)
+
+
+"## For https://www.jrieke.com/"
 url = "https://www.jrieke.com/"
 
 "A HTML link:"
