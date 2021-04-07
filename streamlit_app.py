@@ -62,4 +62,4 @@ st.markdown(
     '<a href="https://github.com/jrieke">sdkf</a>sdlkfs', unsafe_allow_html=True
 )
 st.write("---")
-st.markdown('<iframe src="https://github.com/jrieke"></iframe>')
+st.markdown('<iframe src="https://github.com/jrieke"></iframe>', unsafe_allow_html=True)
