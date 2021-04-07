@@ -63,3 +63,4 @@ st.markdown(
 )
 st.write("---")
 st.markdown('<iframe src="https://github.com/jrieke"></iframe>', unsafe_allow_html=True)
+streamlit.components.v1.iframe("https://github.com/jrieke")
