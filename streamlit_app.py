@@ -59,6 +59,9 @@ st.title("Testing iframes on S4A")
 "## For https://github.com/jrieke"
 url = "https://github.com/jrieke"
 
+"A Markdown link:"
+st.markdown(f"[Click here]({url})")
+
 "A HTML link:"
 st.markdown(f'<a href="{url}">Click here</a>', unsafe_allow_html=True)
 
@@ -71,6 +74,9 @@ st.components.v1.iframe(url)
 
 "## For https://www.jrieke.com/"
 url = "https://www.jrieke.com/"
+
+"A Markdown link:"
+st.markdown(f"[Click here]({url})")
 
 "A HTML link:"
 st.markdown(f'<a href="{url}">Click here</a>', unsafe_allow_html=True)
