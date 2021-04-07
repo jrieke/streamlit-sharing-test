@@ -56,7 +56,7 @@ st.title("Test")
 #     return content
 # file_content = read_file()
 
-url = "https://jrieke.com"
+url = "https://www.jrieke.com/"
 
 "A HTML link:"
 st.markdown(f'<a href="{url}">Click here</a>', unsafe_allow_html=True)
