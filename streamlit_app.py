@@ -63,7 +63,7 @@ url = "https://github.com/jrieke"
 st.markdown(f"[Click here]({url})")
 
 "A HTML link:"
-st.markdown(f'<a href="{url}">Click here</a>', unsafe_allow_html=True)
+st.markdown(f'<a href="{url}" target="_parent">Click here</a>', unsafe_allow_html=True)
 
 "An iframe (via `st.markdown`):"
 st.markdown(f'<iframe src="{url}"></iframe>', unsafe_allow_html=True)
