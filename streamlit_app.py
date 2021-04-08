@@ -8,6 +8,14 @@ import streamlit as st
 
 st.title("Testing iframes on S4A")
 
+# st.multiselect(
+#     "Select something",
+#     [
+#         "Some very long text that will be truncated",
+#         "Short text",
+#     ],
+# )
+
 # ---- aitextgen ----
 # Result: Memory keeps increasing
 # @st.cache(allow_output_mutation=True)
@@ -63,7 +71,7 @@ url = "https://github.com/jrieke"
 st.markdown(f"[Click here]({url})")
 
 "A HTML link:"
-st.markdown(f'<a href="{url}" target="_top">Click here</a>', unsafe_allow_html=True)
+st.markdown(f'<a href="{url}" target="_blank">Click here</a>', unsafe_allow_html=True)
 
 "An iframe (via `st.markdown`):"
 st.markdown(f'<iframe src="{url}"></iframe>', unsafe_allow_html=True)
